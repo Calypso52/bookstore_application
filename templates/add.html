@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'add_data.js') }}"></script>
+
+<div id="topHandleBox">
+    <div id="submitResultInfo">New item successfully created.</div>
+    <div class="topRightPart">
+        <button type="button" class="btn btn-success" id="previewBtn">See it here</button>
+        <div class="topClose">X</div>
+    </div>
+</div>
+
+<div class="addDataMain" id="addDataMain">
+    <div class="addDataLeftImg">
+        <img src="../static/assert/bookshelf.jpg" alt="bookimg">
+    </div>
+    <form id="addDataForm" action="/add">
+        <div class="addInputBox addTitle">
+            <div>Book title:</div>
+            <input type="text" class="addInput form-control bookTitleInput" name="bookTitleInput" placeholder="Please input the title">
+        </div>
+        <div class="addInputBox addAuthor">
+            <div>Book author:</div>
+            <input type="text" class="addInput form-control bookAuthorInput" name="bookAuthorInput" placeholder="Please input one author">
+        </div>
+        <div class="addInputBox addBookCover">
+            <div>Book cover url link:</div>
+            <input type="text" class="addInput form-control bookCoverInput" name="bookCoverInput" placeholder="Please input the url">
+        </div>
+        <div class="addInputBox addYear">
+            <div>Book publish year:</div>
+            <input type="text" class="addInput form-control bookYearInput" name="bookYearInput" placeholder="Please input the publish year">
+        </div>
+        <div class="addInputBox addPrice">
+            <div>Book price:</div>
+            <input type="text" class="addInput form-control bookPriceInput" name="bookPriceInput" placeholder="Please input price like $10.00">
+        </div>
+        <div class="addInputBox addScore">
+            <div>Book score:</div>
+            <input type="text" class="addInput form-control bookScoreInput" name="bookScoreInput" placeholder="Please input score like 4.5/5.0">
+        </div>
+        <div class="addInputBox addLanguage">
+            <div>Book language:</div>
+            <input type="text" class="addInput form-control bookLanguageInput" name="bookLanguageInput" placeholder="Please input the language of the book">
+        </div>
+        <div class="addInputBox addPublisher">
+            <div>Book publisher:</div>
+            <input type="text" class="addInput form-control bookPublisherInput" name="bookPublisherInput" placeholder="Please input the publisher of the book">
+        </div>
+        <div class="addInputBox addGenre">
+            <div>Book genre:</div>
+            <input type="text" class="addInput form-control bookGenreInput" name="bookGenreInput" placeholder="Please enter the genre, separated by commas">
+        </div>
+        <div class="addInputBox addSummary">
+            <div>Book summary:</div>
+            <textarea type="text" class="addInput form-control bookSummaryInput" name="bookSummaryInput" col="3" placeholder="Please input summary"></textarea>
+        </div>
+        <div class="submitBtnBox">
+            <button type="submit" class="btn btn-warning" id="submitBtn">Submit</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

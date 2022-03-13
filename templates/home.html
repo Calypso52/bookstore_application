@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
+<script>
+    let data = {{data|tojson}}
+    // console.log(data)
+</script>
+
+
+<div class="home_main">
+    <div class="home_title">Pick up where you left off</div>
+    <!-- three recommends -->
+    <div class="container">
+        <div class="row" id="books_container">
+            
+        </div>
+    </div>
+    <div id="books_container">
+        
+    </div>
+</div>
+
+{% endblock %}

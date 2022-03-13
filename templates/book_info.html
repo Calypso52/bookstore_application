@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'book_info.js') }}"></script>
+<script>
+    let data = {{data|tojson}}
+    console.log(data)
+</script>
+<div class="book_info">
+    <div id="editJump">Edit</div>
+    <div class="leftBox">
+        <img src="{{data.coverImage}}" alt="book_cover">
+    </div>
+    <div class="rightMain">
+        <div class="book_title">{{data.title}}</div>
+        <ul class="book_genre" id="book_genre"></ul>
+        <div class="second_row">
+            <div class="book_author">{{data.author}}</div>
+            <div class="divider"></div>
+            <div class="publish_year">{{data.year}}</div>
+            <div class="divider"></div>
+            <div class="publisher">publisher: {{data.publisher}}</div>
+        </div>
+        <div class="book_score">scores: {{data.score}} points</div>
+        <div class="book_language">Language: {{data.language}}</div>
+        <hr>
+        <div class="book_price">
+            <div>{{data.price}}</div>
+        </div>
+        <hr>
+        <div class="book_summary">{{data.summary}}</div>
+    </div>
+</div>
+
+{% endblock %}

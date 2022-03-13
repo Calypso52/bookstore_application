@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'edit.js') }}"></script>
+<script>
+    let data = {{data|tojson}}
+    // console.log(data)
+</script>
+<div class="book_info">
+    <div class="leftBox">
+        <img src="{{data.coverImage}}" alt="book_cover">
+    </div>
+    <div class="rightMain">
+        <div class="book_title"><span class="editTitle">{{data.title}}</span>*</div>
+        <ul class="book_genre" id="book_genre"></ul>
+        <div class="second_row">
+            <div class="book_author"><span class="editAuthor">{{data.author}}</span>*</div>
+            <div class="divider"></div>
+            <div class="publish_year"><span class="editYear">{{data.year}}</span>*</div>
+            <div class="divider"></div>
+            publisher: &nbsp;<div class="publisher"><span class="editPublisher">{{data.publisher}}&nbsp;</span>*</div>
+        </div>
+        <div class="book_score">scores: <span class="editScore">{{data.score}}</span>* points</div>
+        <div class="book_language">Language: <span class="editLanguage">{{data.language}}</span>*</div>
+        <hr>
+        <div class="book_price">
+            <div><span class="editPrice">{{data.price}}</span>*</div>
+        </div>
+        <hr>
+        *<div class="book_summary"><span class="editSummary">{{data.summary}}</span></div>
+    </div>
+    
+    <div id="editBottomBtns">
+        <button type="button" class="btn btn-warning" id="editSubmit">Submit</button>
+        <div id="editDiscard">discard</div>
+    </div>
+</div>
+
+<div class="pop_over">
+    Modify tips: <br>
+    Modify by clicking on the item marked with *. 
+    After modification, press enter to save it!!!
+</div>
+
+
+
+{% endblock %}
