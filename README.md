@@ -1,10 +1,18 @@
 # bookstore_application
 
+YouTube demo video link:
+
+https://youtu.be/i6g075mwQmc
+
 ## 1. Start tips
 
 In the root directory:
 
 `python server.py`
+
+open in url:
+
+http://127.0.0.1:5000/
 
 ## 2. Structure
 
