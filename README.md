@@ -56,9 +56,9 @@ See modify tips at the bottom of the page.
 
 What it looks like when editing:
 
-![image-20220316195359436](README.assets/image-20220316195359436.png)
+![image-20220316200747458](README.assets/image-20220316200747458.png)
 
-![image-20220316195704790](README.assets/image-20220316195704790.png)
+![image-20220316200915061](README.assets/image-20220316200915061.png)
 
 **After editing:**
 
