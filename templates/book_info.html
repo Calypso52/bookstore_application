@@ -21,7 +21,18 @@
             <div class="divider"></div>
             <div class="publisher">publisher: {{data.publisher}}</div>
         </div>
-        <div class="book_score">scores: {{data.score}} points</div>
+        <div class="book_score">
+            <div class="grade-progress-box">
+                <div class="grade-star-bg">
+                    <div class="grade-star-gradual">
+                        <span class="progress" id="book_score_progress" style="width: 100%;"></span>
+                        <!-- 镂空星星图 -->
+                        <div class="grade-star-img bgsize"></div>
+                    </div>
+                </div>
+            </div>
+            <div>&nbsp;&nbsp;&nbsp;{{data.score}} points</div>
+        </div>
         <div class="book_language">Language: {{data.language}}</div>
         <hr>
         <div class="book_price">

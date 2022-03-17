@@ -36,19 +36,19 @@ Routes:
 
 Home page with the three highest rated books:
 
-![image-20220313204056471](README.assets/image-20220313204056471.png)
+![image-20220316195115029](README.assets/image-20220316195115029.png)
 
-### 2. /view/<id>
+### 2. /view/<id
 
 Details page for the book with id “5”
 
-![image-20220313204110912](README.assets/image-20220313204110912.png)
 
-### 3. /edit/<id>
+
+### 3. /edit/<id
 
 Edit page for the book with id "5". Edit button is on the top right corner in the /view page
 
-![image-20220313204139255](README.assets/image-20220313204139255.png)
+![image-20220316195334913](README.assets/image-20220316195334913.png)
 
 **How to edit?**
 
@@ -56,9 +56,9 @@ See modify tips at the bottom of the page.
 
 What it looks like when editing:
 
-![image-20220313204157271](README.assets/image-20220313204157271.png)
+![image-20220316195359436](README.assets/image-20220316195359436.png)
 
-![image-20220313204250547](README.assets/image-20220313204250547.png)
+![image-20220316195704790](README.assets/image-20220316195704790.png)
 
 **After editing:**
 
@@ -66,17 +66,19 @@ After the user presses “discard changes” the page should present a dialog bo
 
 **After clicking submit:**
 
-![image-20220313204333731](README.assets/image-20220313204333731.png)
+You can view the result and they are stored in the database.
 
-### 4. /search_result/<input>
+![image-20220316195816426](README.assets/image-20220316195816426.png)
 
-![image-20220313204355579](README.assets/image-20220313204355579.png)
+### 4. /search_result/<input
+
+![image-20220316195907407](README.assets/image-20220316195907407.png)
 
 Search words are highlighted in the web page
 
 The query does substring matching that is not case sensitive on the title and 3 text field: Title, Author, Genre
 
-![image-20220313204412537](README.assets/image-20220313204412537.png)
+![image-20220316195955596](README.assets/image-20220316195955596.png)
 
 
 
@@ -84,25 +86,25 @@ The query does substring matching that is not case sensitive on the title and 3 
 
 User can add a book item into the database
 
-![image-20220313204427417](README.assets/image-20220313204427417.png)
+![image-20220316200014275](README.assets/image-20220316200014275.png)
 
 Some input boxes limit the input with regular language.
 
-![image-20220313204551348](README.assets/image-20220313204551348.png)
+![image-20220316200300941](README.assets/image-20220316200300941.png)
 
 After successfully submitted, you can tap 'See it here' to view the result(It has already been in the database)
 
-![image-20220313204642878](README.assets/image-20220313204642878.png)
+![image-20220316200321794](README.assets/image-20220316200321794.png)
 
 See it here:
 
-![image-20220313204653735](README.assets/image-20220313204653735.png)
+![image-20220316200334684](README.assets/image-20220316200334684.png)
 
 **Error detecting:**
 
 Focus on the first error:
 
-![image-20220313204619935](README.assets/image-20220313204619935.png)
+![image-20220316200233523](README.assets/image-20220316200233523.png)
 
 ## 4. Backend
 

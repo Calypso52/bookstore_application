@@ -14,4 +14,7 @@ $(document).ready(function(){
     $("#editJump").click(function() {
         window.location.href = `/edit/${data.id}`;
     });
+
+    let star = (data.score / 5) * 100;
+    $('#book_score_progress').css('width', `${star}%`);
 })

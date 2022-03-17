@@ -33,7 +33,7 @@ book_info = {
         'summary': "Stunning and elegiac, Norwegian Wood first propelled Haruki Murakami into the forefront of the literary scene.Toru, a serious young college student in Tokyo, is devoted to Naoko, a beautiful and introspective young woman, but their mutual passion is marked by the tragic death of their best friend years before. As Naoko retreats further into her own world, Toru finds himself drawn to a fiercely independent and sexually liberated young woman. A magnificent coming-of-age story steeped in nostalgia, Norwegian Wood blends the music, the mood, and the ethos that were the '60s with a young man's hopeless and heroic first love. ",
         'author': 'Haruki Murakami',
         'price': '$12.99',
-        'score': '4.7',
+        'score': '4.3',
         'genre': ['Love', 'Novel', 'Sentimental', 'Lonely'],
         'publisher': 'Random House Audio',
         'language': 'Japanese'
@@ -72,7 +72,7 @@ book_info = {
         'summary': 'The story takes place in Victorian London, where two very rich, eccentric brothers give the penniless story protagonist, Henry Adams, one million pounds of money in the form of a single peerless bank note. Henry would not be easily able to exchange that note in the bank without being questioned about how he had come to it, charged with theft and arrested. He would also not be able to spend it since no ordinary person would be able to change it.Without knowing it, Henry is the subject of a bet: Oliver believes that the mere possession of this symbol of wealth will enable anyone to have anything he wants, without actually cashing the note. Roderick, on the other hand, feels that the prohibition against exchanging the note for cash will render it totally useless',
         'author': 'Mark Twain',
         'price': '$23.96',
-        'score': '4.2',
+        'score': '4.7',
         'genre': ['Novella', 'Humor', 'Satire'],
         'publisher': 'Page2Page',
         'language': 'English'

@@ -20,7 +20,20 @@
             <div class="divider"></div>
             publisher: &nbsp;<div class="publisher"><span class="editPublisher">{{data.publisher}}&nbsp;</span>*</div>
         </div>
-        <div class="book_score">scores: <span class="editScore">{{data.score}}</span>* points</div>
+        <div class="book_score">
+            <div class="book_score">
+                <div class="grade-progress-box">
+                    <div class="grade-star-bg">
+                        <div class="grade-star-gradual">
+                            <span class="progress" id="book_score_progress" style="width: 100%;"></span>
+                            <!-- 镂空星星图 -->
+                            <div class="grade-star-img bgsize"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>&nbsp;&nbsp;&nbsp;<span class="editScore">{{data.score}}</span>&nbsp;*points</div>
+            </div>
+        </div>
         <div class="book_language">Language: <span class="editLanguage">{{data.language}}</span>*</div>
         <hr>
         <div class="book_price">
